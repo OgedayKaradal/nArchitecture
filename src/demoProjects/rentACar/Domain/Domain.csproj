@@ -7,11 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\corePackages\Core.Persistence\Core.Persistence.csproj" />
+    <None Remove="Entities\" />
+    <None Remove="Entities\Concrete\" />
+    <None Remove="Entities\Abstract\" />
+    <None Remove="Enums\" />
   </ItemGroup>
-
   <ItemGroup>
+    <Folder Include="Entities\" />
+    <Folder Include="Entities\Concrete\" />
+    <Folder Include="Entities\Abstract\" />
     <Folder Include="Enums\" />
   </ItemGroup>
-
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\corePackages\Core.Persistence\Core.Persistence.csproj" />
+  </ItemGroup>
 </Project>

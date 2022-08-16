@@ -1,16 +1,16 @@
-﻿using Application.Services.Repositories;
+﻿using Application2.Services.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Persistence.Contexts;
-using Persistence.Repositories;
+using Persistence2.Contexts;
+using Persistence2.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Persistence
+namespace Persistence2
 {
     public static class PersistenceServiceRegistration
     {

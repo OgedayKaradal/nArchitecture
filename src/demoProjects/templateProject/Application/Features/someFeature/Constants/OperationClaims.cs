@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Features.someFeature.Constants
+namespace Application2.Features.someFeature.Constants
 {
     public static class OperationClaims
     {

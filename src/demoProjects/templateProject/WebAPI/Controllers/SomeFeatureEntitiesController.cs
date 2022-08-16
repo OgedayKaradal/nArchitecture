@@ -1,8 +1,8 @@
-﻿using Application.Features.someFeature.Commands.CreateSomeFeature;
-using Application.Features.someFeature.Dtos;
+﻿using Application2.Features.someFeature.Commands.CreateSomeFeature;
+using Application2.Features.someFeature.Dtos;
 using Microsoft.AspNetCore.Mvc;
 
-namespace WebAPI.Controllers
+namespace WebAPI2.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

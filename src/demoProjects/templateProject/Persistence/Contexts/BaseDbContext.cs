@@ -1,4 +1,4 @@
-﻿using Domain.Entities;
+﻿using Domain2.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using System;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Persistence.Contexts
+namespace Persistence2.Contexts
 {
     public class BaseDbContext : DbContext
     {

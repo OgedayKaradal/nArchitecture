@@ -1,14 +1,14 @@
-﻿using Application.Services.Repositories;
+﻿using Application2.Services.Repositories;
 using Core.CrossCuttingConcerns.Exceptions;
 using Core.Persistence.Paging;
-using Domain.Entities;
+using Domain2.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Features.someFeature.Rules
+namespace Application2.Features.someFeature.Rules
 {
     public class SomeFeatureEntityBusinessRules
     {

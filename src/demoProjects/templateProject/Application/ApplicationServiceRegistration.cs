@@ -1,4 +1,4 @@
-﻿using Application.Features.someFeature.Rules;
+﻿using Application2.Features.someFeature.Rules;
 using Core.Application.Pipelines.Authorization;
 using Core.Application.Pipelines.Caching;
 using Core.Application.Pipelines.Logging;
@@ -13,7 +13,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application
+namespace Application2
 {
     public static class ApplicationServiceRegistration
     {

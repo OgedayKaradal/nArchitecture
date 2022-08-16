@@ -4,6 +4,7 @@
 		<TargetFramework>net6.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
+		<AssemblyName>Persistence</AssemblyName>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -13,8 +14,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\Application\Application.csproj" />
-		<ProjectReference Include="..\Domain\Domain.csproj" />
+	  <ProjectReference Include="..\Application\Application2.csproj" />
+	  <ProjectReference Include="..\Domain\Domain2.csproj" />
 	</ItemGroup>
-
 </Project>

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Features.someFeature.Dtos
+namespace Application2.Features.someFeature.Dtos
 {
     public class CreatedSomeFeatureEntityDto
     {

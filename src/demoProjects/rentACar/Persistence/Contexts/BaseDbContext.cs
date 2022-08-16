@@ -1,4 +1,5 @@
 ﻿using Domain.Entities;
+using Domain.Entities.Concrete;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using System;
@@ -22,9 +23,8 @@ namespace Persistence.Contexts
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            //if (!optionsBuilder.IsConfigured)
-            //    base.OnConfiguring(
-            //        optionsBuilder.UseSqlServer(Configuration.GetConnectionString("SomeConnectionString")));
+            if (!optionsBuilder.IsConfigured)
+                base.OnConfiguring(optionsBuilder.UseNpgsql(Configuration.GetConnectionString("SomeConnectionString")));
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -38,8 +38,8 @@ namespace Persistence.Contexts
 
 
 
-            Brand[] brandEntitySeeds = { new(1, "BMW"), new(2, "Mercedes") };
-            modelBuilder.Entity<Brand>().HasData(brandEntitySeeds);
+            Brand[] brandSeedData = { new(1, "BMW"), new(2, "Mercedes") };
+            modelBuilder.Entity<Brand>().HasData(brandSeedData);
 
            
         }

@@ -1,9 +1,9 @@
-using Application;
+using Application2;
 using Core.CrossCuttingConcerns.Exceptions;
-using Infrastructure;
+using Infrastructure2;
 using Microsoft.EntityFrameworkCore;
-using Persistence;
-using Persistence.Contexts;
+using Persistence2;
+using Persistence2.Contexts;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,7 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddApplicationServices();
-builder.Services.AddSecurityServices();
+//builder.Services.AddSecurityServices();
 builder.Services.AddPersistenceServices(builder.Configuration);
 builder.Services.AddInfrastructureServices();
 builder.Services.AddHttpContextAccessor();

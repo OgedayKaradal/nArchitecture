@@ -1,8 +1,8 @@
-﻿using Application.Features.someFeature.Dtos;
-using Application.Features.someFeature.Rules;
-using Application.Services.Repositories;
+﻿using Application2.Features.someFeature.Dtos;
+using Application2.Features.someFeature.Rules;
+using Application2.Services.Repositories;
 using AutoMapper;
-using Domain.Entities;
+using Domain2.Entities;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -10,7 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Features.someFeature.Commands.CreateSomeFeature
+namespace Application2.Features.someFeature.Commands.CreateSomeFeature
 {
     public class CreateSomeFeatureEntityCommand : IRequest<CreatedSomeFeatureEntityDto>
     {

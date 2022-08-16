@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace Persistence.Migrations
+namespace Persistence2.Migrations
 {
     public partial class Init : Migration
     {
